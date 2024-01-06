@@ -1,81 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 /* header and navigation related css code start */
-header{
-    background-color: #000000;
-    width: 100%;
-    color: white;
+header {
+  background-color: #000000;
+  width: 100%;
+  color: white;
 }
-
-nav{
-    width: 100%;
-    max-width:1280px;
-    height: 80px;
-    margin:  auto;
+nav {
+  width: 100%;
+  max-width: 1280px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav > ul > li {
+  list-style: none;
+}
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+.banner {
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.banner_text {
+  width: 50%;
+}
+.banner_title {
+  font-size: 70px;
+  font-weight: bold;
+}
+.banner_description {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.banner_btn {
+  margin-top: 15px;
+  padding: 16px 50px;
+  font-weight: bold;
+  background-color: #ec3000;
+  color: white;
+  border-radius: 100px;
+  border: 2px solid #ec3000;
+  cursor: pointer;
+}
+.banner_image_div {
+  width: 50%;
+}
+.banner_image {
+  max-width: 90%;
+  max-height: 80%;
+}
+/* header and navigation related css code end */
+main {
+  background-color: whitesmoke;
+}
+/* pricing_section code here */
+.pricing_section {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* pricing_section_header code here */
+.pricing_header {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 70px;
+  text-align: center;
+}
+.pricing_header_title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1b0760;
+}
+.pricing_header > p {
+  margin: 15px 0px;
+  font-size: 18px;
+  color: #9a96ac;
+}
+.pricing_header_search {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding: 1px 1px 1px 5px;
+  border-radius: 100px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 white;
+}
+.pricing_header_input {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+}
+.pricing_header_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 16px 60px;
+  font-weight: bold;
+  background-color: #ec3000;
+  color: white;
+  border-radius: 100px;
+  border: 2px solid #ec3000;
+  cursor: pointer;
+}
+.pricing_header_btn_image{
+    width: 20px;
+    height: 20px;
+}
+.pricing_header_list{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
-nav>ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-nav>ul>li{
+.pricing_header_list>li{
     list-style: none;
-}
-nav>ul>li>a{
-    color: white;
-    text-decoration: none;
-}
-.banner{
-    max-width: 1280px;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.banner_text{
-    width: 50%;
-}
-.banner_title{
-    font-size: 70px;
+    color: #1B0760;
     font-weight: bold;
 }
-.banner_description{
-    font-size: 20px;
-    margin: 20px 0px;
-}
-.banner_btn{
-    margin-top: 15px;
-    padding: 16px 50px;
-    font-weight: bold;
-    background-color: #EC3000;
-    color: white;
+.pricing_header_list_style{
+    padding: 5px 15px;
+    background-color: aqua;
     border-radius: 100px;
-    border: 2px solid #EC3000;
-    cursor: pointer;
+    color: white !important;
 }
-.banner_image_div{
-    width: 50%;
-    
-}
-.banner_image{
-    max-width: 90%;
-    max-height: 80%;
-
-}
-/* header and navigation related css code end */
-.main{
+/* pricing_card code here */
+.pricing_card{
     width: 100%;
-    height: 100vh;
-    color: white;
+    padding: 50px;
 }
