@@ -6,269 +6,91 @@
     <title>Hostire</title>
     <!-- css style link here -->
     <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a61de1ffaa.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <!-- here is navbar -->
-      <nav>
-        <img class="nav_image" src="../src/assets/icons/logo.svg" alt="" />
-        <ul>
-          <li><a href="/">Hosting</a></li>
-          <li><a href="/vps">Vps</a></li>
-          <li><a href="/domin">Domain</a></li>
-          <li><a href="/pricing">Pricing</a></li>
-        </ul>
-      </nav>
-      <!-- here is banner  -->
-      <div id="banner">
-        <div class="banner_text">
-          <h1 class="banner_title">
-            Cloud Hosting <br />
-            for Pros
-          </h1>
-          <p class="banner_description">
-            Deploy your websites in less than 60 seconds.
-          </p>
-          <button class="banner_btn">GET STARTED</button>
-        </div>
-        <div class="banner_image_div">
-          <img
-            class="banner_image"
-            src="../src/assets/images/banner.png"
-            alt=""
-          />
-        </div>
+      <div id="navbar_component" class="component-container">
+        <!-- Include header.html content using JavaScript -->
+        <script>
+          fetch("./components/navbar.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("navbar_component").innerHTML = html)
+            );
+        </script>
+      </div>
+      <!-- here is banner section -->
+      <div id="banner_component" class="component-container">
+        <!-- Include banner.html content using JavaScript -->
+        <script>
+          fetch("./components/banner.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("banner_component").innerHTML = html)
+            );
+        </script>
       </div>
     </header>
     <main>
       <!-- here is pricing section -->
-      <section id="pricing_section">
-        <div id="pricing_header">
-          <h1 class="pricing_header_title">
-            The best webhosting Starting at per month
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            placeat ducimus veritatis velit corrupti quibusdam tempore ullam
-            dolorum
-          </p>
-          <div class="pricing_header_search">
-            <input type="text" name="" class="pricing_header_input" />
-            <button class="pricing_header_btn">
-              <img
-                class="pricing_header_btn_image"
-                src="./assets/icons/search.svg"
-                alt=""
-              />
-              Search
-            </button>
-          </div>
-          <ul class="pricing_header_list">
-            <li>.com $9.26</li>
-            <li class="pricing_header_list_style">.sg $7.91</li>
-            <li>.space $12.98</li>
-            <li>.info $14.15</li>
-            <li>.net $16.15</li>
-            <li>.xyz $10.15</li>
-            <li>more</li>
-          </ul>
-        </div>
-        <div id="pricing_card">
-          <div class="pricing_card_one">
-            <div class="pricing_card_one_header">
-              <p>Entry</p>
-              <div class="pricing_card_one_header_text">
-                <h1 class="pricing_card_one_header_title">
-                  $14<span class="pricing_card_one_header_sub_title"
-                    >/month</span
-                  >
-                </h1>
-                <button class="pricing_card_one_header_btn">10% OFF</button>
-              </div>
-              <h3 class="pricing_card_one_header_description">
-                Easy start on the cloud
-              </h3>
-            </div>
-            <div class="pricing_card_one_features_list">
-              <ul>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> Unlimited
-                  Websites
-                </li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> Unlimited
-                  Bandwidth
-                </li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> 100 GB SSD
-                  Sotrage
-                </li>
-                <li><img src="./assets/icons/tick.svg" alt="" /> 3 GB RAM</li>
-              </ul>
-              <button class="pricing_card_btn_one">Buy Now</button>
-            </div>
-          </div>
-          <div class="pricing_card_two">
-            <div class="pricing_card_two_header">
-              <p>Business</p>
-              <div class="pricing_card_two_header_text">
-                <h1 class="pricing_card_two_header_title">
-                  $24<span class="pricing_card_two_header_sub_title"
-                    >/month</span
-                  >
-                </h1>
-                <button class="pricing_card_two_header_btn">20% OFF</button>
-              </div>
-              <h3 class="pricing_card_two_header_description">
-                Optimal Cloud Experience
-              </h3>
-            </div>
-            <div class="pricing_card_two_features_list">
-              <ul>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> Unlimited
-                  Websites
-                </li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> Unlimited
-                  Bandwidth
-                </li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> 100 GB SSD
-                  Sotrage
-                </li>
-                <li><img src="./assets/icons/tick.svg" alt="" /> 3 GB RAM</li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> 2 CPU Cores
-                </li>
-              </ul>
-              <button class="pricing_card_btn_two">Buy Now</button>
-            </div>
-          </div>
-          <div class="pricing_card_one">
-            <div class="pricing_card_one_header">
-              <p>Business plus</p>
-              <div class="pricing_card_one_header_text">
-                <h1 class="pricing_card_one_header_title">
-                  $54<span class="pricing_card_one_header_sub_title"
-                    >/month</span
-                  >
-                </h1>
-                <button class="pricing_card_one_header_btn">10% OFF</button>
-              </div>
-              <h3 class="pricing_card_one_header_description">
-                Easy start on the cloud
-              </h3>
-            </div>
-            <div class="pricing_card_one_features_list">
-              <ul>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> Unlimited
-                  Websites
-                </li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> Unlimited
-                  Bandwidth
-                </li>
-                <li>
-                  <img src="./assets/icons/tick.svg" alt="" /> 100 GB SSD
-                  Sotrage
-                </li>
-                <li><img src="./assets/icons/tick.svg" alt="" /> 3 GB RAM</li>
-              </ul>
-              <button class="pricing_card_btn_one">Buy Now</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div id="pricing_component" class="component-container">
+        <!-- Include pricing.html content using JavaScript -->
+        <script>
+          fetch("./components/pricing.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("pricing_component").innerHTML = html)
+            );
+        </script>
+      </div>
       <!-- here is hosting_cloud section -->
-      <section id="hosting_cloud_section">
-        <div class="hosting_cloud_text">
-          <h1>Host on the Cloud to Keep Growing</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
-            voluptatem.
-          </p>
-        </div>
-        <div class="hosting_cloud_items">
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./assets/icons/easy.svg"
-                alt=""
-              />
-            </div>
-            <h1>Super Easy to Use</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-          <div class="easy_item_image">
-            <img src="./assets/images/easy.jpg" alt="" />
-          </div>
-          <div class="easy_item_image">
-            <img src="./assets/images/fast.jpg" alt="" />
-          </div>
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./assets/icons/computer.svg"
-                alt=""
-              />
-            </div>
-            <h1>Simply Fast Websites</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./assets/icons/wordpress.svg"
-                alt=""
-              />
-            </div>
-            <h1>Wordpress Made Easy</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-          <div class="easy_item_image">
-            <img src="./assets/images/wordpress.jpg" alt="" />
-          </div>
-          <div class="easy_item_image">
-            <img src="./assets/images/support.jpg" alt="" />
-          </div>
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./assets/icons/clock.svg"
-                alt=""
-              />
-            </div>
-            <h1>24/7 Expert Support</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-        </div>
-      </section>
+      <div id="hosting_cloud_component" class="component-container">
+        <!-- Include hosting_cloud.html content using JavaScript -->
+        <script>
+          fetch("./components/hosting_cloud.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("hosting_cloud_component").innerHTML =
+                  html)
+            );
+        </script>
+      </div>
+      <!--  here is control panel section -->
+      <div id="control_panel_component" class="component-container">
+        <!-- Include control_panel.html content using JavaScript -->
+        <script>
+          fetch("./components/control_panel.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("control_panel_component").innerHTML =
+                  html)
+            );
+        </script>
+      </div>
+      <!-- here is testimonial section -->
+      <div id="testimonial_component" class="component-container">
+        <!-- Include testimonial.html content using JavaScript -->
+        <script>
+          fetch("./components/testimonial.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("testimonial_component").innerHTML =
+                  html)
+            );
+        </script>
+      </div>
     </main>
     <footer></footer>
   </body>
