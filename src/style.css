@@ -492,3 +492,66 @@ blockquote h3::after {
 .author_company{
   color: #9a96ac;
 }
+/* small banner code here */
+.small_banner{
+  width: 100%;
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  height: 200px;
+  background-color: #2584FF;
+  padding: 20px 50px;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  top: -130px;
+  left: 0;
+  right: 0;
+
+}
+.small_banner_title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.small_banner_description{
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.small_banner_btn{
+  padding: 20px 80px;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #05CDF0;
+  color: white;
+  border: none;
+  display: flex;
+  font-weight: bold;
+}
+/* Footer code here */
+footer{
+  width: 100%;
+  background-color: #232323;
+  position: relative;
+  margin-top: 200px;
+  padding: 50px 20px;
+  color: white;
+}
+.footer_service{
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  padding: 100px  20px 20px 20px;
+  grid-template-columns: repeat(5,1fr);
+  gap: 20px;
+}
+.footer_service_title{
+  text-transform: uppercase;
+}
+.footer_service_list>li{
+  list-style: none;
+  margin: 20px 0px;
+  color: grey;
+}

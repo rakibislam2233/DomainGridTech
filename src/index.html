@@ -92,6 +92,31 @@
         </script>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div id="small_banner" class="component-container">
+        <!-- Include small_banner.html content using JavaScript -->
+        <script>
+          fetch("./components/small_banner.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("small_banner").innerHTML = html)
+            );
+        </script>
+      </div>
+      <div id="footer_service" class="component-container">
+        <!-- Include footer_service.html content using JavaScript -->
+        <script>
+          fetch("./components/footer_service.html")
+            .then((response) => response.text())
+            .then(
+              (html) =>
+                (document.getElementById("footer_service").innerHTML = html)
+            );
+        </script>
+      </div>
+    </footer>
+    <!-- script js  -->
+    <script src="./script.js"></script>
   </body>
 </html>
