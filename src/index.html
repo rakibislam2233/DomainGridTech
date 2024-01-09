@@ -15,17 +15,18 @@
   <body>
     <header>
       <!-- here is navbar -->
-      <div id="navbar_component" class="component-container">
-        <!-- Include header.html content using JavaScript -->
-        <script>
-          fetch("./components/navbar.html")
-            .then((response) => response.text())
-            .then(
-              (html) =>
-                (document.getElementById("navbar_component").innerHTML = html)
-            );
-        </script>
-      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/icons/logo.svg" alt="" />
+        </div>
+        <ul class="nav-list" id="navList">
+          <li><a href="#">Hosting</a></li>
+          <li><a href="#">Vps</a></li>
+          <li><a href="#">Domain</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+      </nav>
       <!-- here is banner section -->
       <div id="banner_component" class="component-container">
         <!-- Include banner.html content using JavaScript -->
@@ -117,6 +118,15 @@
       </div>
     </footer>
     <!-- script js  -->
-    <script src="./script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("menuIcon");
+        const navList = document.getElementById("navList");
+
+        menuIcon.addEventListener("click", function () {
+          navList.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>
