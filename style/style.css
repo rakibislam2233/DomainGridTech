@@ -7,7 +7,7 @@
 }
 /* header and navigation related css code start */
 header {
-  background-color: #000000;
+  background-color: #020230;
   width: 100%;
   color: white;
 }
@@ -16,7 +16,7 @@ header {
   max-width: 1280px;
   margin: 0 auto;
   height: 80px;
-  background-color: black;
+  background-color: #020230;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -476,7 +476,6 @@ blockquote h3 {
   font-weight: lighter;
   color: #9a96ac;
   line-height: 30px;
-  letter-spacing: 2px;
 }
 
 blockquote h3::before {
@@ -546,7 +545,7 @@ blockquote h3::after {
 /* Footer code here */
 footer {
   width: 100%;
-  background-color: #232323;
+  background-color: #020230;
   position: relative;
   margin-top: 200px;
   padding: 50px 20px;
