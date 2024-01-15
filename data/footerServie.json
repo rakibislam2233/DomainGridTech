@@ -1,0 +1,48 @@
+{
+  "service": [
+    {
+      "title": "Prodoucts",
+      "serviceList": [
+        "Website Hosting",
+        "Free Automated Wordpress",
+        "Migrations",
+        "Domin Name",
+        "Monthly Web Hosting"
+      ]
+    },
+    {
+      "title": "COMPANY",
+      "serviceList": [
+        "About",
+        "Affiliates",
+        "Blogs",
+        "Careers",
+        "Community",
+        "News",
+        "Green Hosting"
+      ]
+    },
+    {
+      "title": "SUPPORT",
+      "serviceList": [
+        "Contact",
+        "Knowledge Base",
+        "Forums",
+        "Systme Status",
+        "Web Hosting",
+        "News",
+        "Drem Compute"
+      ]
+    },
+    {
+      "title": "DOMAINS",
+      "serviceList": [
+        "Domin Checker",
+        "Domin Trasnfer",
+        "Free Domin",
+        "XYZ Domin",
+        "Cheap SSL Certificate"
+      ]
+    }
+  ]
+}

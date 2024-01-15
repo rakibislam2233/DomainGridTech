@@ -1,0 +1,41 @@
+{
+  "card": [
+    {
+      "cardTitle": "Entry",
+      "cardPricing": "$14",
+      "cardOffers": "10% off",
+      "cardDescription": "Easy start on the cloud",
+      "cardService": [
+        "Unlimited Websites",
+        "Unlimited Bandwidth",
+        "100 GB SSD Sotrage",
+        "3 GB RAM"
+      ]
+    },
+    {
+      "cardTitle": "Business",
+      "cardPricing": "$24",
+      "cardOffers": "20% off",
+      "cardDescription": "Optimal Cloud Experience",
+      "cardService": [
+        "Unlimited Websites",
+        "Unlimited Bandwidth",
+        "100 GB SSD Sotrage",
+        "3 GB RAM",
+        " 2 CPU Cores"
+      ]
+    },
+    {
+      "cardTitle": "Business plus",
+      "cardPricing": "$54",
+      "cardOffers": "20% off",
+      "cardDescription": "Easy start on the cloud",
+      "cardService": [
+        "Unlimited Websites",
+        "Unlimited Bandwidth",
+        "100 GB SSD Sotrage",
+        "3 GB RAM"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "cloud": [
+    {
+      "image": "https://i.postimg.cc/6Q0Qdn2C/easy-to-use-1.png",
+      "title": "Super Easy to Use",
+      "description": "EasyCloud is a super user-friendly cloud hosting service designed for simplicity. With a straightforward setup and intuitive interface, it's perfect for beginners and small businesses looking for a hassle-free hosting experience.",
+      "cloud_images": "https://i.postimg.cc/m2BRh9q4/easy.jpg"
+    },
+    {
+      "image": "https://i.postimg.cc/bv8JD3Jz/launch.png",
+      "title": "Simply Fast Websites",
+      "description": "Create blazingly fast websites with our streamlined platform. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "cloud_images": "https://i.postimg.cc/NjPwNz0G/fast.jpg"
+    },
+    {
+      "image": "https://i.postimg.cc/Tw33Q1gF/wordpress.png",
+      "title": "WordPress Made Easy",
+      "description": "Experience the simplicity of building and managing your website with our user-friendly WordPress hosting platform. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "cloud_images": "https://i.postimg.cc/Px1s5fQN/wordpress.jpg"
+    },
+    {
+      "image": "https://i.postimg.cc/NjRFjWQJ/service.png",
+      "title": "24/7 Expert Support",
+      "description": "Receive round-the-clock assistance from our team of experienced experts. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "cloud_images": "https://i.postimg.cc/s2kCzGSt/support.jpg"
+    }
+  ]
+}

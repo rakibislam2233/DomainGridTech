@@ -11,6 +11,18 @@
       src="https://kit.fontawesome.com/a61de1ffaa.js"
       crossorigin="anonymous"
     ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
   </head>
   <body>
     <header>
@@ -47,15 +59,19 @@
       <!-- here is pricing section -->
       <section id="pricing_section">
         <div id="pricing_header">
-          <h1 class="pricing_header_title">
-            The best webhosting Starting at per month
-          </h1>
+          <h1 class="pricing_header_title">Search Your Domain</h1>
           <p>
-            Words which don't look even slightly believable. If you are going to
-            use a passage of Lorem Ipsum.
+            Vero justo sed sed vero clita amet. Et justo vero sea diam elitr
+            amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero
+            elitr sit clita.
           </p>
           <div class="pricing_header_search">
-            <input type="text" name="" class="pricing_header_input" />
+            <input
+              type="text"
+              name=""
+              class="pricing_header_input"
+              placeholder="Enter your domin name"
+            />
             <button class="pricing_header_btn">
               <img
                 class="pricing_header_btn_image"
@@ -65,111 +81,10 @@
               Search
             </button>
           </div>
-          <ul class="pricing_header_list">
-            <li>.com $9.26</li>
-            <li class="pricing_header_list_style">.sg $7.91</li>
-            <li>.space $12.98</li>
-            <li>.info $14.15</li>
-            <li>.net $16.15</li>
-            <li>.xyz $10.15</li>
-            <li>more</li>
+          <ul id="pricing_header_list" class="pricing_header_list">
           </ul>
         </div>
         <div id="pricing_card">
-          <div class="pricing_card_one">
-            <div class="pricing_card_one_header">
-              <p>Entry</p>
-              <div class="pricing_card_one_header_text">
-                <h1 class="pricing_card_one_header_title">
-                  $14<span class="pricing_card_one_header_sub_title"
-                    >/month</span
-                  >
-                </h1>
-                <button class="pricing_card_one_header_btn">10% OFF</button>
-              </div>
-              <h3 class="pricing_card_one_header_description">
-                Easy start on the cloud
-              </h3>
-            </div>
-            <div class="pricing_card_one_features_list">
-              <ul>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> Unlimited Websites
-                </li>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> Unlimited Bandwidth
-                </li>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> 100 GB SSD Sotrage
-                </li>
-                <li><img src="./icons/tick.svg" alt="" /> 3 GB RAM</li>
-              </ul>
-              <button class="pricing_card_btn_one">Buy Now</button>
-            </div>
-          </div>
-          <div class="pricing_card_two">
-            <div class="pricing_card_two_header">
-              <p>Business</p>
-              <div class="pricing_card_two_header_text">
-                <h1 class="pricing_card_two_header_title">
-                  $24<span class="pricing_card_two_header_sub_title"
-                    >/month</span
-                  >
-                </h1>
-                <button class="pricing_card_two_header_btn">20% OFF</button>
-              </div>
-              <h3 class="pricing_card_two_header_description">
-                Optimal Cloud Experience
-              </h3>
-            </div>
-            <div class="pricing_card_two_features_list">
-              <ul>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> Unlimited Websites
-                </li>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> Unlimited Bandwidth
-                </li>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> 100 GB SSD Sotrage
-                </li>
-                <li><img src="./icons/tick.svg" alt="" /> 3 GB RAM</li>
-                <li><img src="./icons/tick.svg" alt="" /> 2 CPU Cores</li>
-              </ul>
-              <button class="pricing_card_btn_two">Buy Now</button>
-            </div>
-          </div>
-          <div class="pricing_card_one">
-            <div class="pricing_card_one_header">
-              <p>Business plus</p>
-              <div class="pricing_card_one_header_text">
-                <h1 class="pricing_card_one_header_title">
-                  $54<span class="pricing_card_one_header_sub_title"
-                    >/month</span
-                  >
-                </h1>
-                <button class="pricing_card_one_header_btn">10% OFF</button>
-              </div>
-              <h3 class="pricing_card_one_header_description">
-                Easy start on the cloud
-              </h3>
-            </div>
-            <div class="pricing_card_one_features_list">
-              <ul>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> Unlimited Websites
-                </li>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> Unlimited Bandwidth
-                </li>
-                <li>
-                  <img src="./icons/tick.svg" alt="" /> 100 GB SSD Sotrage
-                </li>
-                <li><img src="./icons/tick.svg" alt="" /> 3 GB RAM</li>
-              </ul>
-              <button class="pricing_card_btn_one">Buy Now</button>
-            </div>
-          </div>
         </div>
       </section>
       <!-- here is hosting_cloud section -->
@@ -181,83 +96,7 @@
             middle of text.
           </p>
         </div>
-        <div class="hosting_cloud_items">
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./icons/easy.svg"
-                alt=""
-              />
-            </div>
-            <h1>Super Easy to Use</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-          <div class="easy_item_image">
-            <img src="./images/easy.jpg" alt="" />
-          </div>
-          <div class="easy_item_image">
-            <img src="./images/fast.jpg" alt="" />
-          </div>
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./icons/computer.svg"
-                alt=""
-              />
-            </div>
-            <h1>Simply Fast Websites</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./icons/wordpress.svg"
-                alt=""
-              />
-            </div>
-            <h1>Wordpress Made Easy</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
-          <div class="easy_item_image">
-            <img src="./images/wordpress.jpg" alt="" />
-          </div>
-          <div class="easy_item_image">
-            <img src="./images/support.jpg" alt="" />
-          </div>
-          <div class="easy_item">
-            <div class="easy_item_container">
-              <img
-                class="easy_item_container_icon"
-                src="./icons/clock.svg"
-                alt=""
-              />
-            </div>
-            <h1>24/7 Expert Support</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <button class="easy_item_btn">LEARN MORE</button>
-          </div>
+        <div id="hosting_cloud_items" class="hosting_cloud_items">
         </div>
       </section>
       <!--  here is control panel section -->
@@ -277,9 +116,7 @@
               <div>
                 <h1>Easy Start & Managed Updates</h1>
                 <p class="control_panel_items_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
+                  Effortlessly launch and keep your system current with our Easy Start & Managed Updates service. Streamline your experience from setup to seamless maintenance
                 </p>
               </div>
             </div>
@@ -291,9 +128,7 @@
               <div>
                 <h1>Staging, GIT & WP-CLI</h1>
                 <p class="control_panel_items_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
+                  Optimize your workflow with Staging, GIT, and WP-CLI integration. Effortlessly manage projects, version control, and WordPress command-line tasks for streamlined development and deployment
                 </p>
               </div>
             </div>
@@ -305,9 +140,7 @@
               <div>
                 <h1>Dynamic Caching & More</h1>
                 <p class="control_panel_items_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
+                  Elevate performance with Dynamic Caching & More. Enjoy accelerated load times and advanced features for a responsive and efficient web experience
                 </p>
               </div>
             </div>
@@ -318,7 +151,8 @@
       <section id="testimonial_section">
         <h1 class="testimonial_section_title">What our Customers are Saying</h1>
         <p class="testimonial_section_description">
-          I find Next.js an awesome tool to create Web Applications, and at the end of this post 
+          I find Next.js an awesome tool to create Web Applications, and at the
+          end of this post
         </p>
         <div class="testimonial_section_container">
           <div class="testimonial_section_image_container">
@@ -365,7 +199,7 @@
         </div>
         <button class="small_banner_btn">Get Start</button>
       </section>
-      <section class="footer_service">
+      <section id="footer_service" class="footer_service">
         <div>
           <div class="logo">
             <img src="./images/DomainGridTech.png" alt="" />
@@ -374,63 +208,9 @@
             <li>Copyright 2024 Mosh</li>
           </ul>
         </div>
-        <div>
-          <h3 class="footer_service_title">Prodoucts</h3>
-          <ul class="footer_service_list">
-            <li>Website Hosting</li>
-            <li>Website Hosting</li>
-            <li>Free Automated Wordpress</li>
-            <li>Migrations</li>
-            <li>Domin Name</li>
-            <li>Monthly Web Hosting</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="footer_service_title">Company</h3>
-          <ul class="footer_service_list">
-            <li>About</li>
-            <li>Affiliates</li>
-            <li>Blogs</li>
-            <li>Careers</li>
-            <li>Community</li>
-            <li>News</li>
-            <li>Green Hosting</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="footer_service_title">Support</h3>
-          <ul class="footer_service_list">
-            <li>Contact</li>
-            <li>Knowledge Base</li>
-            <li>Forums</li>
-            <li>Systme Status</li>
-            <li>Web Hosting</li>
-            <li>News</li>
-            <li>Drem Compute</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="footer_service_title">Domains</h3>
-          <ul class="footer_service_list">
-            <li>Domin Checker</li>
-            <li>Domin Trasnfer</li>
-            <li>Free Domin</li>
-            <li>XYZ Domin</li>
-            <li>Cheap SSL Certificate</li>
-          </ul>
-        </div>
       </section>
     </footer>
-    <!-- script js  -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuIcon = document.getElementById("menuIcon");
-        const navList = document.getElementById("navList");
-
-        menuIcon.addEventListener("click", function () {
-          navList.classList.toggle("show");
-        });
-      });
     </script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
